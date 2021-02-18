@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="inter-face">
+        <span>Start Game</span>
+        <div class="footer">
+            This Game was created by Osama 
+        </div>
+    </div>
+    <button class="start">Start</button>
+    <div class="container">
+        <div class="theName">Hello :<span></span></div>
+        <div class="time">Timer : <span></span></div>
+        <div class="try">wrong :<span>0</span></div>
+    </div>
+    <div class="memory-block">
+        <div class="game-block" data-animals="bird">
+            <div class="all front"></div>
+            <div class="all back">
+                <img src="Images/bird.jpg" alt="">
+            </div>
+        </div>
+        <div class="game-block " data-animals="bird">
+            <div class="all front"></div>
+            <div class="all back">
+                <img src="Images/bird.jpg" alt="">
+            </div>
+        </div>
+        <div class="game-block " data-animals="butterfly">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/butterfly.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block " data-animals="butterfly">
+            <div class="all front"></div>
+            <div class="all back">
+                <img src="Images/butterfly.jpg" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-animals="horses">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/horses.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block " data-animals="horses">
+            <div class="all front"></div>
+            <div class="all back">
+                <img src="Images/horses.jpg" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-animals="monkey">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/monkey.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block" data-animals="monkey">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/monkey.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block " data-animals="tiger">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/tiger.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block" data-animals="tiger">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/tiger.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block" data-animals="wolf">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/wolf.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block" data-animals="wolf">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/wolf.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block " data-animals="peni">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/penci.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block " data-animals="peni">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/penci.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block" data-animals="dog">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/dog.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="game-block " data-animals="dog">
+            <div class="game-block">
+                <div class="all front"></div>
+                <div class="all back">
+                    <img src="Images/dog.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end-game">
+        <span>Game Over</span>
+    </div>
+    <audio id="succsess" src="audio/Success-effect.mp3" preload="auto"></audio>
+    <audio id="failed" src="audio/zapsplat_cartoon_xylophone_short_fast_ascend_002_53041.mp3" preload="auto"></audio>
+    <audio id="game-over" src="/audio/fail.mp3" preload="auto"></audio>
+</body>
+<script src="js/app.js"></script>
+
+
+</html>

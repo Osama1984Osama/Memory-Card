@@ -1,0 +1,181 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  background-image: url(../Images/Oz6lWS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+}
+.inter-face {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-image: url(../Images/memory-cards.jpeg);
+  background-size: cover;
+}
+.inter-face span {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%,-50%);
+  background-color: #0a60b5;
+  color: #fcaa4b;
+  padding: 15px 45px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 2px 2px white;
+  text-align: center;
+  border-radius: 50px;
+  border: .3px solid rgb(217, 255, 0);
+  cursor: pointer;
+  animation: game-start 4s  ;
+  transition: 0.3s ease-in-out;
+}
+.footer {
+  width: 65%;
+  margin:  0 auto;
+  padding: 25px;
+  position: absolute;
+  top: 820px;
+  right: -1200px;
+  background-color:#0c449e;
+  color: #e28624;
+  border-radius: 50px;
+  border: .3px solid rgb(217, 255, 0);
+  text-align: center;
+  font-size: 47px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px white;
+  animation: moving 8s linear;
+  transition: .10s ease-in-out;
+}
+@keyframes game-start{
+  0% { left: -300px;}
+  100%{ left: 50% }
+}
+@keyframes moving{
+  0% {left: -30; }
+  25%{right: 300px;}
+  50%{right: 330px;  opacity: .6; }
+  100%{right: 100%;  opacity: .1;
+  }
+}
+.inter-face span:hover{
+  width: 500px;
+  font-size: 60px;
+  color: #ffcd4a;
+}
+.end-game {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(12, 25, 140, .9);
+  visibility: hidden;
+  z-index: 6;
+}
+.end-game span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #a82c1c;
+  color: #fcaa4b;
+  padding: 15px 45px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 2px 2px white;
+  text-align: center;
+  border-radius: 50px;
+  border: .3px solid rgb(217, 255, 0);
+  cursor: pointer;
+}
+.container { 
+  display: flex;
+  width: 950px;
+  margin: 3px auto;
+  color: #ccb62c;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 50px;
+}
+.container .theName {
+  width: 40%;
+}
+.container .time {
+  width: 20%;
+  text-align: right;
+  color: #ccb62c;
+}
+.container .try {
+  width: 40%;
+  text-align: right;
+}
+.start{
+  position: absolute;
+  width: 200px;
+  background-color: rgb(12, 25, 140, .9);
+  height: 75px;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #ccb62c;
+  top: 100px;
+  margin-left: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.memory-block {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-column-gap: 10px;
+  margin: 0px auto;
+  justify-content: center;
+}
+.memory-block .game-block {
+  height: 223px;
+  transition: transform .5s;
+  transform-style: preserve-3d ;
+  cursor: pointer;
+  margin: 1px 3px 3px 3px;
+}
+.memory-block .game-block .front {
+  background-image: url(../Images/block.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 200px; 
+  position: relative;
+  
+}
+.memory-block .game-block.test,
+.memory-block .game-block.opened {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+.memory-block.no-click{
+  pointer-events: none;
+}
+.memory-block .game-block .back {
+  transform: rotateY(180deg);
+} 
+.memory-block .game-block img {
+  width: 100%;
+  height: 100%;
+}
+.memory-block .game-block .all {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border:  3px solid black;
+}
